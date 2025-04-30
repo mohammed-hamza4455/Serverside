@@ -32,6 +32,7 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
 <html>
 <head>
 <meta charset='utf-8'>
@@ -95,7 +96,8 @@ h1 {
 </div>
 </body>
 </html>
-
+```
+```
 from django.shortcuts import render
 
 def rightcylinder(request):
@@ -122,7 +124,8 @@ def rightcylinder(request):
         print('Area =', area)
     
     return render(request, 'mathapp/math.html', context)
-
+```
+```
 
 from django.contrib import admin
 from django.urls import path
@@ -132,7 +135,7 @@ urlpatterns = [
     path('areaofrightcylinder/',views.rightcylinder,name="areaofrightcylinder"),
     path('',views.rightcylinder,name="areaofrightcylinderroot")
 ]
-
+```
 ## SERVER SIDE PROCESSING:
 
 
