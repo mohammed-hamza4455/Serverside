@@ -96,8 +96,8 @@ h1 {
 </div>
 </body>
 </html>
-```
-```
+
+
 from django.shortcuts import render
 
 def rightcylinder(request):
@@ -124,8 +124,7 @@ def rightcylinder(request):
         print('Area =', area)
     
     return render(request, 'mathapp/math.html', context)
-```
-```
+
 
 from django.contrib import admin
 from django.urls import path
@@ -135,12 +134,12 @@ urlpatterns = [
     path('areaofrightcylinder/',views.rightcylinder,name="areaofrightcylinder"),
     path('',views.rightcylinder,name="areaofrightcylinderroot")
 ]
+
 ```
 ## SERVER SIDE PROCESSING:
 
 
 ## HOMEPAGE:
 ![alt text](<Screenshot 2025-04-30 111152.png>)
-
 ## RESULT:
 The program for performing server side processing is completed successfully.
